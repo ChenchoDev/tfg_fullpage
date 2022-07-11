@@ -1,0 +1,27 @@
+.card img {
+    opacity: .5;
+    height: auto;
+}
+
+.enlace:hover {
+    text-decoration: none;
+}
+
+.card img:hover {
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.texto-blanco-brand {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.texto-verde-brand {
+    color: rgb(98, 211, 6);
+    font-weight: bold;
+}
+
+.brand a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,6 @@
+INSERT INTO usuarios (`usu_nombre`,`usu_password`,`usu_rol`) VALUES ('medicina', MD5('medicina'), '3');
+
+SELECT u.usu_nombre "paciente", m.usu_nombre "medico" , e.usu_nombre "enfermero"
+FROM usuarios u JOIN paciente p ON u.usu_id=p.pac_id
+				JOIN usuarios m ON p.pac_medico=m.usu_id
+                JOIN usuarios e ON p.pac_enfermero=e.usu_id
