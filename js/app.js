@@ -21,24 +21,3 @@ const myFullpage = new fullpage('#fullpage', {
 
 
 });
-
-$(document).ready(function() {
-    $('#example').DataTable();
-});
-
-let fpwatermark = document.querySelector('.fp-watermark');
-fpwatermark.remove()
-
-let formulario = document.querySelector("#formulario");
-let usuario = document.querySelector("#usuario");
-let password = document.querySelector("#password");
-let btnform = document.querySelector("#btnform");
-btnform.addEventListener('click', fvalida)
-
-function fvalida() {
-    if (usuario.length == 0) {
-        alerto('El campo usuario n o puede estar vacio')
-        usuario.focus()
-        return false;
-    }
-}

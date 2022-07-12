@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('#tabla1').stacktable();
+    $('#simple-example-table').stacktable();
 });
